@@ -24,8 +24,7 @@
     start.addEventListener('click',()=>setTimeout(applyWhenReady,80),{once:true});
   }
 
-  const hasSeen=localStorage.getItem('lekisOnboardingSeen')==='1';
-  if(hasSeen){
+  if(localStorage.getItem('lekisOnboarded')){
     window.addEventListener('load',()=>setTimeout(applyWhenReady,250),{once:true});
   }
 })();
