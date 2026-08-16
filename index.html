@@ -22,7 +22,7 @@
   <div class="progress"><span id="progressText"></span><div class="track"><div class="fill" id="fill"></div></div></div>
   <section class="stage"><div class="deck" id="deck"></div></section>
   <div class="actions"><button class="action no" id="passBtn">✕</button><button class="action yes" id="likeBtn">♥</button></div>
-  <div class="hint">Vänster = pass · höger = spara · ☆ = favorit</div>
+  <div class="hint">Vänster = pass · höger = spara · tryck på kortet = mer info · ☆ = favorit</div>
 </main>
 
 <div class="sheet" id="browseSheet"><div class="sheetInner browseSheetInner">
@@ -61,7 +61,7 @@
     <div class="onboardLogo">L</div>
     <div class="eyebrow">VÄLKOMMEN TILL LEKIS</div>
     <h1>Hitta nästa barnhäng utan gruppchattskaos.</h1>
-    <div class="howRow"><span>↔</span><div><b>Swipa</b><small>Vänster för nej. Höger sparar stället.</small></div></div>
+    <div class="howRow"><span>↔</span><div><b>Swipa</b><small>Vänster för nej. Höger sparar stället. Tryck på kortet för mer info.</small></div></div>
     <div class="howRow"><span>📍</span><div><b>Välj var</b><small>Hela stan, ett område eller använd Nära mig.</small></div></div>
     <div class="howRow"><span>👥</span><div><b>Swipa ihop</b><small>Starta en grupp och se vilka ställen flest vill till.</small></div></div>
     <div class="howRow"><span>☆</span><div><b>Favoriter</b><small>Stjärnmarkera guldkornen och lägg dem först nästa gång.</small></div></div>
@@ -70,6 +70,6 @@
 </div>
 
 <div class="matchToast" id="matchToast"><div class="matchCard"><div class="matchEmoji">🎈</div><div class="eyebrow">ALLA GILLAR!</div><h2 id="matchTitle"></h2><p>Hela gruppen har swipat höger på samma ställe.</p><button class="primary" id="matchContinue">FORTSÄTT SWIPA</button></div></div>
-<script src="./app.js"></script><script src="./duo.js"></script>
+<script src="./app.js"></script><script src="./card-tap.js"></script><script src="./duo.js"></script>
 </body>
 </html>
