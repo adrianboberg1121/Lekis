@@ -2,21 +2,11 @@ let allPlaces=[],places=[],index=0,liked=[],activeFilter='all',activeArea='all',
 const deck=document.getElementById('deck'),fill=document.getElementById('fill'),progressText=document.getElementById('progressText'),count=document.getElementById('count');
 const favorites=new Set(JSON.parse(localStorage.getItem('lekisFavorites')||'[]'));
 const photoCache=JSON.parse(localStorage.getItem('lekisPhotoCacheV2')||'{}');
-const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#039;'}[m]));
+const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const artFor=p=>`linear-gradient(145deg,${p.colors?.[0]||'#84a878'},${p.colors?.[1]||'#d9e2bc'})`;
 const mapQuery=p=>encodeURIComponent(p.mapQuery||`${p.name}, ${p.area}, Stockholm`);
 const isFav=p=>favorites.has(p.id);
-const areaCenters={
-  'Aspudden':[59.306,18.001],'Bandhagen':[59.270,18.050],'Södermalm':[59.314,18.072],'Järvastaden':[59.389,17.999],
-  'Vasastan':[59.343,18.047],'Östermalm':[59.338,18.086],'Kungsholmen':[59.333,18.031],'Gärdet':[59.344,18.103],
-  'Tantolunden':[59.312,18.044],'Solberga':[59.297,17.995],'Fruängen':[59.286,17.965],'Hökarängen':[59.257,18.084],
-  'Gubbängen':[59.263,18.083],'Midsommarkransen':[59.301,18.000],'Fredhäll':[59.331,18.007],'Norra Djurgården':[59.367,18.116],
-  'Akalla':[59.414,17.913],'Hammarby Sjöstad':[59.302,18.104],'Hägersten':[59.302,17.985],'Älvsjö':[59.279,18.009],
-  'Skärholmen':[59.276,17.907],'Bredäng':[59.295,17.934],'Vällingby':[59.363,17.873],'Blackeberg':[59.348,17.882],
-  'Bromma':[59.338,17.939],'Årsta':[59.297,18.051],'Enskede':[59.280,18.070],'Farsta':[59.243,18.091],
-  'Hammarbyhöjden':[59.294,18.104],'Bagarmossen':[59.277,18.132],'Skarpnäck':[59.267,18.134],'Kärrtorp':[59.284,18.115],
-  'Husby':[59.410,17.925],'Rinkeby':[59.389,17.928],'Tensta':[59.394,17.902],'Spånga':[59.382,17.897]
-};
+const areaCenters={'Aspudden':[59.306,18.001],'Bandhagen':[59.270,18.050],'Södermalm':[59.314,18.072],'Järvastaden':[59.389,17.999],'Vasastan':[59.343,18.047],'Östermalm':[59.338,18.086],'Kungsholmen':[59.333,18.031],'Gärdet':[59.344,18.103],'Tantolunden':[59.312,18.044],'Solberga':[59.297,17.995],'Fruängen':[59.286,17.965],'Hökarängen':[59.257,18.084],'Gubbängen':[59.263,18.083],'Midsommarkransen':[59.301,18.000],'Fredhäll':[59.331,18.007],'Norra Djurgården':[59.367,18.116],'Akalla':[59.414,17.913],'Hammarby Sjöstad':[59.302,18.104],'Hägersten':[59.302,17.985],'Älvsjö':[59.279,18.009],'Skärholmen':[59.276,17.907],'Bredäng':[59.295,17.934],'Vällingby':[59.363,17.873],'Blackeberg':[59.348,17.882],'Bromma':[59.338,17.939],'Årsta':[59.297,18.051],'Enskede':[59.280,18.070],'Farsta':[59.243,18.091],'Hammarbyhöjden':[59.294,18.104],'Bagarmossen':[59.277,18.132],'Skarpnäck':[59.267,18.134],'Kärrtorp':[59.284,18.115],'Husby':[59.410,17.925],'Rinkeby':[59.389,17.928],'Tensta':[59.394,17.902],'Spånga':[59.382,17.897]};
 function saveFavorites(){localStorage.setItem('lekisFavorites',JSON.stringify([...favorites]))}
 function normalizePhotoResult(page){const ii=page?.imageinfo?.[0];if(!ii?.thumburl&&!ii?.url)return null;return {url:ii.thumburl||ii.url,source:page.fullurl||`https://commons.wikimedia.org/?curid=${page.pageid}`,title:page.title||''}}
 function photoScore(hit,p){const t=(hit.title||'').toLowerCase(),name=p.name.toLowerCase().replace(/parkleken|parklek|lekplats|plaskdamm|4h-gård/g,'').trim(),area=(p.area||'').toLowerCase();let s=0;for(const token of name.split(/\s+/).filter(x=>x.length>3)){if(t.includes(token))s+=3}if(area&&t.includes(area))s+=2;if(t.includes('park'))s+=1;return s}
