@@ -11,9 +11,8 @@
 <main class="app">
   <header class="top">
     <div class="brand"><span class="mark">L</span><div><b>LEKIS</b><small>HITTA ERT NÄSTA HÄNG</small></div></div>
-    <button class="ghost" id="duoBtn">DUO</button>
+    <button class="ghost" id="duoBtn">GRUPP</button>
   </header>
-
   <div class="filters" id="filters">
     <button class="filter active" data-filter="all">ALLT</button>
     <button class="filter" data-filter="parklek">PARKLEK</button>
@@ -21,51 +20,16 @@
     <button class="filter" data-filter="djur">DJUR</button>
     <button class="filter" data-filter="vatten">VATTEN</button>
   </div>
-
   <div class="progress"><span id="progressText"></span><div class="track"><div class="fill" id="fill"></div></div></div>
-
   <section class="stage"><div class="deck" id="deck"></div></section>
-
-  <div class="actions">
-    <button class="action no" id="passBtn">✕</button>
-    <button class="action yes" id="likeBtn">♥</button>
-  </div>
+  <div class="actions"><button class="action no" id="passBtn">✕</button><button class="action yes" id="likeBtn">♥</button></div>
   <div class="hint">Swipe vänster för pass · höger för lekdejt</div>
-
   <button class="saved" id="savedBtn">MINA STÄLLEN <span id="count">0</span></button>
 </main>
-
-<div class="sheet" id="details"><div class="sheetInner">
-  <button class="close" id="closeDetails">✕</button>
-  <div class="detailArt" id="detailArt"></div>
-  <div class="eyebrow" id="detailType"></div>
-  <h2 id="detailTitle"></h2>
-  <p id="detailText"></p>
-  <div class="chips" id="detailChips"></div>
-  <div class="detailRows" id="detailRows"></div>
-</div></div>
-
-<div class="sheet" id="savedSheet"><div class="sheetInner">
-  <button class="close" id="closeSaved">✕</button>
-  <div class="eyebrow">LEKIS</div><h2>Mina ställen</h2>
-  <div id="savedList"></div>
-  <button class="secondary" id="resetBtn">BÖRJA OM</button>
-</div></div>
-
-<div class="sheet" id="duoSheet"><div class="sheetInner">
-  <button class="close" id="closeDuo">✕</button>
-  <div class="eyebrow">LEKIS DUO</div><h2>Hitta ett ställe ihop</h2>
-  <p class="intro">Två föräldrar swipar samma ställen var för sig. När båda gillar samma plats blir det en match.</p>
-  <div id="duoBody"></div>
-</div></div>
-
-<div class="matchToast" id="matchToast"><div class="matchCard">
-  <div class="matchEmoji">🎈</div><div class="eyebrow">MATCH!</div>
-  <h2 id="matchTitle"></h2><p>Ni vill båda ses här.</p>
-  <button class="primary" id="matchContinue">FORTSÄTT SWIPA</button>
-</div></div>
-
-<script src="./app.js"></script>
-<script src="./duo.js"></script>
+<div class="sheet" id="details"><div class="sheetInner"><button class="close" id="closeDetails">✕</button><div class="detailArt" id="detailArt"></div><div class="eyebrow" id="detailType"></div><h2 id="detailTitle"></h2><p id="detailText"></p><div class="chips" id="detailChips"></div><div class="detailRows" id="detailRows"></div></div></div>
+<div class="sheet" id="savedSheet"><div class="sheetInner"><button class="close" id="closeSaved">✕</button><div class="eyebrow">LEKIS</div><h2>Mina ställen</h2><div id="savedList"></div><button class="secondary" id="resetBtn">BÖRJA OM</button></div></div>
+<div class="sheet" id="duoSheet"><div class="sheetInner"><button class="close" id="closeDuo">✕</button><div class="eyebrow">LEKIS GRUPP</div><h2>Hitta ett ställe ihop</h2><p class="intro">Bjud in upp till åtta föräldrar. Alla swipar samma ställen och Lekis rankar platserna efter hur många i gruppen som vill ses där.</p><div id="duoBody"></div></div></div>
+<div class="matchToast" id="matchToast"><div class="matchCard"><div class="matchEmoji">🎈</div><div class="eyebrow">ALLA GILLAR!</div><h2 id="matchTitle"></h2><p>Hela gruppen har swipat höger på samma ställe.</p><button class="primary" id="matchContinue">FORTSÄTT SWIPA</button></div></div>
+<script src="./app.js"></script><script src="./duo.js"></script>
 </body>
 </html>
