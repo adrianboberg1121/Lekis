@@ -1,0 +1,67 @@
+[
+  {
+    "id":"event-gruffalon-2026-08",
+    "kind":"event","name":"Marionetteatern: Gruffalon","area":"City","type":"event",
+    "summary":"Lekfull dockteater av den välkända berättelsen om Gruffalon på Kulturhuset Stadsteatern.",
+    "tags":["Teater","Från 4 år","Kulturhuset"],"features":["Barnteater","Inomhus","Biljett krävs"],
+    "bestFor":"Från 4 år","vibe":"Barnteater mitt i stan","dateLabel":"8–30 AUG","timeLabel":"Flera tider","startDate":"2026-08-08","endDate":"2026-08-30",
+    "price":"Se arrangör","venue":"Kulturhuset Stadsteatern","address":"Sergels torg, Stockholm","mapQuery":"Kulturhuset Stadsteatern, Stockholm",
+    "source":"Visit Stockholm","sourceUrl":"https://www.visitstockholm.se/event/marionetteatern-the-gruffalo/next/","colors":["#865da6","#d7b7e8"]
+  },
+  {
+    "id":"event-sommaratelje-transtromer-2026-08-19","kind":"event","name":"Sommarateljé","area":"Södermalm","type":"event",
+    "summary":"Drop-in med skapande, spel och sommarlovspyssel på Tranströmerbiblioteket.",
+    "tags":["Skapa","Drop-in","Gratis"],"features":["Skaparverkstad","Spel","Fika"],
+    "bestFor":"Alla barnåldrar","vibe":"Lugnt kreativt eftermiddagshäng","dateLabel":"19 AUG","timeLabel":"14:00–16:00","startDate":"2026-08-19","endDate":"2026-08-19",
+    "price":"Gratis","venue":"Tranströmerbiblioteket","mapQuery":"Tranströmerbiblioteket, Stockholm",
+    "source":"Stockholms stadsbibliotek","sourceUrl":"https://biblioteket.stockholm.se/evenemang/sommaratelje-33","colors":["#d9845b","#f2cea4"]
+  },
+  {
+    "id":"event-fiskar-parkteatern-2026-08-19","kind":"event","name":"The Right Way for Fish to Die","area":"Södermalm","type":"event",
+    "summary":"Mörkt men lekfullt dans- och cirkusverk utomhus där två performers gestaltar fiskar med fysisk humor.",
+    "tags":["Parkteatern","Cirkus","Gratis"],"features":["Dans","Cirkus","Utomhus"],
+    "bestFor":"Familj","vibe":"Kort och annorlunda scenkonst i parken","dateLabel":"19 AUG","timeLabel":"18:00–18:30","startDate":"2026-08-19","endDate":"2026-08-19",
+    "price":"Gratis","venue":"Vitabergsparken","address":"Stora Mejtens gränd 16, Stockholm","mapQuery":"Vitabergsparken, Stockholm",
+    "source":"Visit Stockholm","sourceUrl":"https://www.visitstockholm.se/event/parkteatern-the-right-way-for-fish-to-die/2026-08-19/1800/1830/","colors":["#3f8293","#a8d8df"]
+  },
+  {
+    "id":"event-magiskt-rum-2026-08-21","kind":"event","name":"Ett magiskt rum i skogen","area":"Djurgården","type":"event",
+    "summary":"Familjevisning av Aurora Borealis Star Dome följd av workshop där barnen bygger egna magiska rum av naturmaterial.",
+    "tags":["Workshop","Konst","Familj"],"features":["Familjevisning","Skapande","Utomhus"],
+    "bestFor":"Familj","vibe":"Konstutflykt och skapande i skogen","dateLabel":"21 & 28 AUG","timeLabel":"14:00–16:00","startDate":"2026-08-21","endDate":"2026-08-28",
+    "price":"Se arrangör","venue":"Prinsessan Estelles Skulpturpark","address":"Rosendalsvägen 39B, Stockholm","mapQuery":"Prinsessan Estelles Skulpturpark, Stockholm",
+    "source":"Visit Stockholm","sourceUrl":"https://www.visitstockholm.se/event/family-tours-and-workshops-a-magical-space-in-the/next/","colors":["#567e62","#b8d1a9"]
+  },
+  {
+    "id":"event-postmuseum-familjevisning-2026","kind":"event","name":"Familjevisning på Postmuseum","area":"Gamla stan","type":"event",
+    "summary":"Familjeanpassad visning på Postmuseum. Ett enkelt inomhusalternativ när ni vill göra något tillsammans i stan.",
+    "tags":["Museum","Familj","Inomhus"],"features":["Guidad visning","Museum","Centralt"],
+    "bestFor":"Familj","vibe":"Lättsam museiutflykt","dateLabel":"FRÅN 21 AUG","timeLabel":"Flera datum","startDate":"2026-08-21","endDate":"2026-12-11",
+    "price":"Se arrangör","venue":"Postmuseum","mapQuery":"Postmuseum, Stockholm",
+    "source":"Visit Stockholm","sourceUrl":"https://www.visitstockholm.se/event/","colors":["#c84d45","#efb1a3"]
+  },
+  {
+    "id":"event-familjedag-berwaldhallen-2026-08-22","kind":"event","name":"Familjedag i Berwaldhallen","area":"Östermalm","type":"event",
+    "summary":"Prova instrument, träffa Radioapan, gå tipspromenad och besök sagohörnan under Östersjöfestivalens familjedag.",
+    "tags":["Musik","Radioapan","Gratis"],"features":["Instrumentprovning","Sagohörna","Tipspromenad"],
+    "bestFor":"Alla åldrar","vibe":"Stor gratis familjedag","dateLabel":"22 AUG","timeLabel":"10:30–15:30","startDate":"2026-08-22","endDate":"2026-08-22",
+    "price":"Gratis i foajéerna","venue":"Berwaldhallen","address":"Dag Hammarskjölds väg 3, Stockholm","mapQuery":"Berwaldhallen, Stockholm",
+    "source":"Visit Stockholm","sourceUrl":"https://www.visitstockholm.se/event/family-day-in-berwaldhallen/2026-08-22/1030/1530/","colors":["#536ba6","#b7c7ee"]
+  },
+  {
+    "id":"event-jarva-sommar-2026-08-22","kind":"event","name":"Biblioteket ute i Järva","area":"Järva","type":"event",
+    "summary":"Biblioteket dyker upp på Husbygårdsdagen och Rinkebyfestivalen med pyssel, boktips och familjeaktiviteter.",
+    "tags":["Festival","Pyssel","Familj"],"features":["Pyssel","Boktips","Utomhus"],
+    "bestFor":"Hela familjen","vibe":"Festivalhäng med biblioteket","dateLabel":"22 AUG","timeLabel":"Under dagen","startDate":"2026-08-22","endDate":"2026-08-22",
+    "price":"Gratis","venue":"Husbygårdsdagen / Rinkebyfestivalen","mapQuery":"Husby gård, Stockholm",
+    "source":"Stockholms stadsbibliotek","sourceUrl":"https://biblioteket.stockholm.se/evenemang/vi-ses-ute-i-jarva-i-sommar-3","colors":["#d19a45","#f0d398"]
+  },
+  {
+    "id":"event-folkfest-parkteatern-2026-08-26","kind":"event","name":"Parkteatern: Folkfest 2026","area":"Södermalm","type":"event",
+    "summary":"Svensk folkmusik, folksång och folkdans i Vitabergsparken med Robert Fux, Emilia Amper och gäster.",
+    "tags":["Parkteatern","Musik","Gratis"],"features":["Livemusik","Folkdans","Utomhus"],
+    "bestFor":"Familj","vibe":"Stor, färgstark sensommarkväll","dateLabel":"26 AUG","timeLabel":"18:00–19:15","startDate":"2026-08-26","endDate":"2026-08-26",
+    "price":"Gratis","venue":"Vitabergsparken","address":"Stora Mejtens gränd 16, Stockholm","mapQuery":"Vitabergsparken, Stockholm",
+    "source":"Visit Stockholm","sourceUrl":"https://www.visitstockholm.se/event/parkteatern-folkfest-2026/2026-08-26/1800/1915/","colors":["#b34e78","#e5a8bf"]
+  }
+]
