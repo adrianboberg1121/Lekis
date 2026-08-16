@@ -11,26 +11,37 @@
 <main class="app">
   <header class="top">
     <div class="brand"><span class="mark">L</span><div><b>LEKIS</b><small>HITTA ERT NÄSTA HÄNG</small></div></div>
-    <div class="topActions"><button class="ghost savedTop" id="savedBtn">SPARADE <span id="count">0</span></button><button class="ghost" id="duoBtn">GRUPP</button></div>
+    <div class="topActions"><button class="ghost savedTop" id="savedBtn">♥ <span id="count">0</span></button><button class="ghost" id="duoBtn">GRUPP</button></div>
   </header>
 
-  <div class="browseControls">
-    <label class="areaControl"><span>OMRÅDE</span><select id="areaSelect"><option value="all">Hela Stockholm</option></select></label>
-    <button class="favFirst" id="favFirstBtn" aria-pressed="false">☆ FAVORITER FÖRST</button>
+  <div class="quickBar">
+    <button class="browseBtn" id="browseBtn"><span>📍</span><b id="browseLabel">Hela Stockholm</b><span>⌄</span></button>
+    <button class="favQuick" id="favFirstBtn" aria-pressed="false" title="Favoriter först">☆</button>
   </div>
 
-  <div class="filters" id="filters">
+  <div class="progress"><span id="progressText"></span><div class="track"><div class="fill" id="fill"></div></div></div>
+  <section class="stage"><div class="deck" id="deck"></div></section>
+  <div class="actions"><button class="action no" id="passBtn">✕</button><button class="action yes" id="likeBtn">♥</button></div>
+  <div class="hint">Vänster = pass · höger = spara · ☆ = favorit</div>
+</main>
+
+<div class="sheet" id="browseSheet"><div class="sheetInner browseSheetInner">
+  <button class="close" id="closeBrowse">✕</button>
+  <div class="eyebrow">VAD ÄR NI SUGNA PÅ?</div><h2>Välj var ni vill leka</h2>
+  <button class="nearMe" id="nearMeBtn"><span>◎</span><div><b>Nära mig</b><small>Använder din position och visar närmaste först</small></div></button>
+  <label class="areaPicker"><span>ELLER VÄLJ OMRÅDE</span><select id="areaSelect"><option value="all">Hela Stockholm</option></select></label>
+  <div class="browseDivider"></div>
+  <div class="eyebrow">TYP AV STÄLLE</div>
+  <div class="browseFilters" id="filters">
     <button class="filter active" data-filter="all">ALLT</button>
     <button class="filter" data-filter="parklek">PARKLEK</button>
     <button class="filter" data-filter="lekpark">LEKPARK</button>
     <button class="filter" data-filter="djur">DJUR</button>
     <button class="filter" data-filter="vatten">VATTEN</button>
   </div>
-  <div class="progress"><span id="progressText"></span><div class="track"><div class="fill" id="fill"></div></div></div>
-  <section class="stage"><div class="deck" id="deck"></div></section>
-  <div class="actions"><button class="action no" id="passBtn">✕</button><button class="action yes" id="likeBtn">♥</button></div>
-  <div class="hint">Swipe vänster för pass · höger för lekdejt · ☆ för favorit</div>
-</main>
+  <button class="primary" id="applyBrowse">VISA STÄLLEN</button>
+  <button class="helpLink" id="helpLink">SÅ FUNKAR LEKIS</button>
+</div></div>
 
 <div class="sheet" id="details"><div class="sheetInner">
   <button class="close" id="closeDetails">✕</button>
@@ -44,6 +55,20 @@
 </div></div>
 
 <div class="sheet" id="duoSheet"><div class="sheetInner"><button class="close" id="closeDuo">✕</button><div class="eyebrow">LEKIS GRUPP</div><h2>Hitta ett ställe ihop</h2><p class="intro">Bjud in upp till åtta föräldrar. Alla swipar samma ställen och Lekis rankar platserna efter hur många i gruppen som vill ses där.</p><div id="duoBody"></div></div></div>
+
+<div class="onboarding" id="onboarding">
+  <div class="onboardCard">
+    <div class="onboardLogo">L</div>
+    <div class="eyebrow">VÄLKOMMEN TILL LEKIS</div>
+    <h1>Hitta nästa barnhäng utan gruppchattskaos.</h1>
+    <div class="howRow"><span>↔</span><div><b>Swipa</b><small>Vänster för nej. Höger sparar stället.</small></div></div>
+    <div class="howRow"><span>📍</span><div><b>Välj var</b><small>Hela stan, ett område eller använd Nära mig.</small></div></div>
+    <div class="howRow"><span>👥</span><div><b>Swipa ihop</b><small>Starta en grupp och se vilka ställen flest vill till.</small></div></div>
+    <div class="howRow"><span>☆</span><div><b>Favoriter</b><small>Stjärnmarkera guldkornen och lägg dem först nästa gång.</small></div></div>
+    <button class="primary" id="startBtn">BÖRJA SWIPA</button>
+  </div>
+</div>
+
 <div class="matchToast" id="matchToast"><div class="matchCard"><div class="matchEmoji">🎈</div><div class="eyebrow">ALLA GILLAR!</div><h2 id="matchTitle"></h2><p>Hela gruppen har swipat höger på samma ställe.</p><button class="primary" id="matchContinue">FORTSÄTT SWIPA</button></div></div>
 <script src="./app.js"></script><script src="./duo.js"></script>
 </body>
