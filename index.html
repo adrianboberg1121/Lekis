@@ -14,6 +14,11 @@
     <div class="topActions"><button class="ghost savedTop" id="savedBtn">♥ <span id="count">0</span></button><button class="ghost" id="duoBtn">GRUPP</button></div>
   </header>
 
+  <div class="modeSwitch" id="modeSwitch">
+    <button class="modeTab active" data-mode="places">PLATSER</button>
+    <button class="modeTab" data-mode="events">EVENT</button>
+  </div>
+
   <div class="quickBar">
     <button class="browseBtn" id="browseBtn"><span>📍</span><b id="browseLabel">Hela Stockholm</b><span>⌄</span></button>
     <button class="favQuick" id="favFirstBtn" aria-pressed="false" title="Favoriter först">☆</button>
@@ -62,14 +67,14 @@
     <div class="eyebrow">VÄLKOMMEN TILL LEKIS</div>
     <h1>Hitta nästa barnhäng utan gruppchattskaos.</h1>
     <div class="howRow"><span>📍</span><div><b>Nära dig först</b><small>När du börjar ber Lekis om din position och visar närmaste ställena först. Du kan alltid välja ett annat område.</small></div></div>
-    <div class="howRow"><span>↔</span><div><b>Swipa</b><small>Vänster för nej. Höger sparar stället. Tryck på kortet för mer info.</small></div></div>
+    <div class="howRow"><span>↔</span><div><b>Swipa</b><small>Vänster för nej. Höger sparar. Tryck på kortet för mer info.</small></div></div>
+    <div class="howRow"><span>🎭</span><div><b>Platser eller event</b><small>Byt till Event för barnteater, workshops, festivaler och annat som händer på ett visst datum.</small></div></div>
     <div class="howRow"><span>👥</span><div><b>Swipa ihop</b><small>Starta en grupp och se vilka ställen flest vill till.</small></div></div>
-    <div class="howRow"><span>☆</span><div><b>Favoriter</b><small>Stjärnmarkera guldkornen och lägg dem först nästa gång.</small></div></div>
     <button class="primary" id="startBtn">BÖRJA NÄRA MIG</button>
   </div>
 </div>
 
 <div class="matchToast" id="matchToast"><div class="matchCard"><div class="matchEmoji">🎈</div><div class="eyebrow">ALLA GILLAR!</div><h2 id="matchTitle"></h2><p>Hela gruppen har swipat höger på samma ställe.</p><button class="primary" id="matchContinue">FORTSÄTT SWIPA</button></div></div>
-<script src="./app.js"></script><script src="./default-near.js"></script><script src="./extra-places.js"></script><script src="./card-tap.js"></script><script src="./duo.js"></script>
+<script src="./app.js"></script><script src="./default-near.js"></script><script src="./extra-places.js"></script><script src="./event-mode.js"></script><script src="./card-tap.js"></script><script src="./duo.js"></script>
 </body>
 </html>
